@@ -32,6 +32,7 @@
 #include "SketchFilter.h"
 #include "MultiplyBlendFilter.h"
 #include "PinchDistortionFilter.h"
+#include "SwirlFilter.h"
 
 #include "FilterChain.h"
 

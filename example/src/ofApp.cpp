@@ -28,6 +28,7 @@ void ofApp::setup(){
     _filters.push_back(new MotionDetectionFilter(_video.getTextureReference()));
     _filters.push_back(new LowPassFilter(_video.getWidth(), _video.getHeight(), 0.9));
     _filters.push_back(new PinchDistortionFilter(ofGetWidth(), ofGetHeight(), 2.0, 0.5));
+    _filters.push_back(new SwirlFilter(ofGetWidth(), ofGetHeight(), 1.0, 1.0));
 
         // and here's how you might daisy-chain a bunch of filters
     
