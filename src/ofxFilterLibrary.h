@@ -33,6 +33,8 @@
 #include "MultiplyBlendFilter.h"
 #include "PinchDistortionFilter.h"
 #include "SwirlFilter.h"
+#include "ColorInvertFilter.h"
+#include "FalseColorFilter.h"
 
 #include "FilterChain.h"
 
