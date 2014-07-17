@@ -31,6 +31,7 @@
 #include "MotionDetectionFilter.h"
 #include "SketchFilter.h"
 #include "MultiplyBlendFilter.h"
+#include "PinchDistortionFilter.h"
 
 #include "FilterChain.h"
 

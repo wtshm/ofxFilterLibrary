@@ -23,6 +23,7 @@ void FilterChain::begin() {
 }
 
 void FilterChain::end() {
+	if (_filters.size()<1) return;
     _filters[0]->end();
     _ping.end();
     
