@@ -19,6 +19,9 @@ public:
     virtual void    onKeyPressed(int key);
     virtual string  getInstructions() { return "Left and Right change scale: " + ofToString(_scale) + "\nUp and Down change radius: " + ofToString(_radius); }
 	
+	void setRadius(float radius);
+	void setScale(float scale);
+	
     
 protected:
     virtual string  _getFragSrc();

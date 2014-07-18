@@ -15,6 +15,8 @@ class FalseColorFilter : public AbstractFilter {
 public:
 	FalseColorFilter(ofVec3f firstColor = ofVec3f(0.0, 0.0, 0.5), ofVec3f secondColor = ofVec3f(1.0, 0.0, 0.0));
 	virtual ~FalseColorFilter();
+	void setFirstColor(ofVec3f firstColor);
+	void setSecondColor(ofVec3f secondColor);
 	
 protected:
     virtual string  _getFragSrc();

@@ -16,6 +16,16 @@ FalseColorFilter::FalseColorFilter(ofVec3f firstColor, ofVec3f secondColor) : Ab
 }
 FalseColorFilter::~FalseColorFilter() {}
 
+void FalseColorFilter::setFirstColor(ofVec3f firstColor) {
+	_firstColor = firstColor;
+	updateParameter("firstColor", _firstColor);
+}
+
+void FalseColorFilter::setSecondColor(ofVec3f secondColor) {
+	_secondColor = secondColor;
+	updateParameter("secondColor", _secondColor);
+}
+
 string FalseColorFilter::_getFragSrc() {
     return GLSL_STRING(120,
         uniform sampler2D inputImageTexture;

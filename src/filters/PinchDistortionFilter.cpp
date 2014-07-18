@@ -34,6 +34,16 @@ void PinchDistortionFilter::onKeyPressed(int key) {
     updateParameter("radius", _radius);
 }
 
+void PinchDistortionFilter::setRadius(float radius) {
+	_radius = radius;
+	updateParameter("radius", radius);
+}
+
+void PinchDistortionFilter::setScale(float scale) {
+	_scale = scale;
+	updateParameter("scale", scale);
+}
+
 string PinchDistortionFilter::_getFragSrc() {
     return GLSL_STRING(120,
         uniform sampler2D inputImageTexture;

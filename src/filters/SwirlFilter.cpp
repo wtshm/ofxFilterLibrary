@@ -32,6 +32,16 @@ void SwirlFilter::onKeyPressed(int key) {
     updateParameter("radius", _radius);
 }
 
+void SwirlFilter::setRadius(float radius) {
+	_radius = radius;
+	updateParameter("radius", radius);
+}
+
+void SwirlFilter::setAngle(float angle) {
+	_angle = angle;
+	updateParameter("angle", angle);
+}
+
 string SwirlFilter::_getFragSrc() {
     return GLSL_STRING(120,
         uniform sampler2D inputImageTexture;

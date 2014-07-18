@@ -19,6 +19,7 @@ public:
     virtual void    onKeyPressed(int key);
     virtual string  getInstructions() { return "Up and Down change pixel size: " + ofToString(_pixelRatio); }
 
+	void setPixelRatio(float pixelRatio);
     
 protected:
     virtual string  _getFragSrc();

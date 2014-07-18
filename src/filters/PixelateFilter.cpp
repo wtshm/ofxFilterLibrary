@@ -25,6 +25,11 @@ void PixelateFilter::onKeyPressed(int key) {
     updateParameter("fractionalWidthOfPixel", _pixelRatio);
 }
 
+void PixelateFilter::setPixelRatio(float pixelRatio) {
+	_pixelRatio = pixelRatio;
+    updateParameter("fractionalWidthOfPixel", _pixelRatio);
+}
+
 string PixelateFilter::_getFragSrc() {
     return GLSL_STRING(120,
         uniform sampler2D inputImageTexture;
